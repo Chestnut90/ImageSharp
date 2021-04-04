@@ -1,4 +1,10 @@
-[Bb]in/
-[Dd]ebug/
-x64/
-x86/
+
+# ImageProcessing project
+ImageProcessing/[Bb]in/
+ImageProcessing/[Dd]ebug/
+ImageProcessing/[Oo]bj/
+
+# Models project
+Models/[Bb]in/
+Models/[Dd]ebug/
+Models/[Oo]bj/
