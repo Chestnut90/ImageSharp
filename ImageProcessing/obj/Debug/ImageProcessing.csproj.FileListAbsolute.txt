@@ -85,3 +85,16 @@ E:\Devs\ImageProcessing\ImageProcessing\obj\Debug\Views\KMeanDebugerView\UcImage
 E:\Devs\ImageProcessing\ImageProcessing\obj\Debug\Views\KMeanDebugerView\UcKMeanDebuger.baml
 E:\Devs\ImageProcessing\ImageProcessing\obj\Debug\Views\ImageViewer\ucSimpleViewer.baml
 E:\Devs\ImageProcessing\ImageProcessing\obj\Debug\Views\KMeanDebugerView\UcStackImages.baml
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ImageProcessing.csprojAssemblyReference.cache
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\MainWindow.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ThumbNails\UcThumbNail.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ThumbNails\UcThumbNailList.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\KMeanDebugerViews\WinKmeanDialog.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\KMeanDebugerViews\UcKMeanDebuger.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\Views\ImageViewer\ucSimpleViewer.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\App.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\GeneratedInternalTypeHelper.g.cs
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ImageProcessing_MarkupCompile.cache
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ImageProcessing_MarkupCompile.lref
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ImageProcessing.exe
+D:\Development\ImageSharp\ImageProcessing\obj\Debug\ImageProcessing.pdb

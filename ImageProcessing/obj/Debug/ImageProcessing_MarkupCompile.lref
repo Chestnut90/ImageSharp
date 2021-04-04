@@ -1,11 +1,9 @@
-﻿
+﻿D:\Development\ImageSharp\ImageProcessing\obj\Debug\GeneratedInternalTypeHelper.g.cs
 
-FE:\Devs\ImageProcessing\ImageProcessing\MainWindow.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\ImageViewer\ucThumbNail.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\ImageViewer\ucThumbNailViewer.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\InputDialogs\KmeanDialog.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\KMeanDebugerView\UcImageViewer.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\KMeanDebugerView\UcKMeanDebuger.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\ImageViewer\ucSimpleViewer.xaml;;
-FE:\Devs\ImageProcessing\ImageProcessing\Views\KMeanDebugerView\UcStackImages.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\MainWindow.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\ThumbNails\UcThumbNail.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\ThumbNails\UcThumbNailList.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\KMeanDebugerViews\WinKmeanDialog.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\KMeanDebugerViews\UcKMeanDebuger.xaml;;
+FD:\Development\ImageSharp\ImageProcessing\Views\ImageViewer\ucSimpleViewer.xaml;;
 

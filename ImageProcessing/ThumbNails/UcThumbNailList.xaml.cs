@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace ImageProcessing.ThumbNails
+namespace Views.ThumbNails
 {
     /// <summary>
     /// UcThumbNailList.xaml에 대한 상호 작용 논리
@@ -23,36 +24,29 @@ namespace ImageProcessing.ThumbNails
         public UcThumbNailList()
         {
             InitializeComponent();
-            //this.DataContext = this;
-
-            ItemsPanelTemplate panelTemplate = new ItemsPanelTemplate();
-
-            this.ListBox.ItemsSource = this.ThumbNails;
-
         }
 
-        public void InsertItem(ViewModels.ThumbNails.ThumbNailViewModel thumbnail)
-        {
-            this.ThumbNails.Add(thumbnail);
-        }
+        public delegate void ThumbNailClick(object sender, EventArgs e);
 
-        public ViewModels.ThumbNails.ThumbNailsViewModel ThumbNails
-        { get; private set; } = new ViewModels.ThumbNails.ThumbNailsViewModel();
-
-
-        public delegate void ThumbNailList_ItemClick(object sender, EventArgs e);
-        public event ThumbNailList_ItemClick ThumbNailClickEvent;
+        public event ThumbNailClick ThumbNailClik;
 
         private void ListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            var selectedItem = ((ListBox)sender).SelectedItem;
-            if (selectedItem is null)
+            var listbox = sender as ListBox;
+            if (listbox == null || listbox.SelectedItem == null)
             {
                 return;
             }
+            this.ThumbNailClik?.Invoke(listbox.SelectedItem, new EventArgs());
 
-            // changed.
-            this.ThumbNailClickEvent?.Invoke(selectedItem, new EventArgs());
+        }
+
+        public void InsertThumbNail(Models.ViewModels.ThumbNails.ThumbNailViewModel thumbnail)
+        {
+            UcThumbNail ucThumbNail = new UcThumbNail();
+            ucThumbNail.DataContext = thumbnail;
+
+            this.ListBox.Items.Add(thumbnail);
         }
     }
 }

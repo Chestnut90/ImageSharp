@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Devs\ImageProcessing\ImageProcessing\obj\x64\Debug\
+D:\Development\ImageSharp\ImageProcessing\obj\x64\Debug\
 ImageProcessing
 none
 false
 DEBUG;TRACE
-E:\Devs\ImageProcessing\ImageProcessing\App.xaml
-635855201
+D:\Development\ImageSharp\ImageProcessing\App.xaml
+6-1857469481
 
-11-490130955
-22792390223
-MainWindow.xaml;ThumbNails\UcThumbNail.xaml;ThumbNails\UcThumbNailList.xaml;Views\InputDialogs\KmeanDialog.xaml;KMeanDebugerView\UcKMeanDebuger.xaml;Views\ImageViewer\ucSimpleViewer.xaml;
+11599865409
+18-355567373
+ImageViewers\UcImageViewer.xaml;KMeanDebugers\UcKMeanDebuger.xaml;KMeanDebugers\WinKMeanInputDialog.xaml;MainWindow.xaml;ThumbNails\UcThumbNail.xaml;ThumbNails\UcThumbNailList.xaml;
 
 False
 

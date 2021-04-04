@@ -57,10 +57,6 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.Data.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Mvvm.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.Core.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpf.LayoutControl.v20.2, Version=20.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -85,22 +81,27 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ImageViewers\UcImageViewer.xaml.cs">
+      <DependentUpon>UcImageViewer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ThumbNails\UcThumbNail.xaml.cs">
       <DependentUpon>UcThumbNail.xaml</DependentUpon>
     </Compile>
     <Compile Include="ThumbNails\UcThumbNailList.xaml.cs">
       <DependentUpon>UcThumbNailList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\ImageViewer\UIZoomElement.cs" />
-    <Compile Include="Views\InputDialogs\KmeanDialog.xaml.cs">
-      <DependentUpon>KmeanDialog.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="KMeanDebugerView\UcKMeanDebuger.xaml.cs">
-      <DependentUpon>UcKMeanDebuger.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ImageViewer\ucSimpleViewer.xaml.cs">
-      <DependentUpon>ucSimpleViewer.xaml</DependentUpon>
-    </Compile>
+    <Page Include="ImageViewers\UcImageViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="KMeanDebugers\UcKMeanDebuger.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="KMeanDebugers\WinKMeanInputDialog.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -109,29 +110,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ImageViewers\UIZoomElement.cs" />
+    <Compile Include="KMeanDebugers\UcKMeanDebuger.xaml.cs">
+      <DependentUpon>UcKMeanDebuger.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="KMeanDebugers\WinKMeanInputDialog.xaml.cs">
+      <DependentUpon>WinKMeanInputDialog.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Page Include="ThumbNails\UcThumbNail.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ThumbNails\UcThumbNailList.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\InputDialogs\KmeanDialog.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="KMeanDebugerView\UcKMeanDebuger.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ImageViewer\ucSimpleViewer.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
@@ -148,7 +144,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Properties\Licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -162,9 +157,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
-      <Project>{0ac740a5-1257-450d-ba05-9febe8164e94}</Project>
-      <Name>ViewModels</Name>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{796023fb-2063-41c8-93c0-b06729d0cf75}</Project>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
